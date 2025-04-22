@@ -26,6 +26,11 @@ npm run generate
 npm run dev
 ```
 
+4. In Vercel, Toggle Override for Build Command and put:
+```bash
+npm run generate && npm run build
+```
+
 ## Common Issues
 
 - Ensure your environment file is called `.env`
