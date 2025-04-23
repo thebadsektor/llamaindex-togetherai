@@ -19,7 +19,7 @@
     --card: 0 0% 100%;
     --card-foreground: 222.2 47.4% 11.2%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 158 80% 45%; /* bright green */
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96.1%;
@@ -31,42 +31,40 @@
     --destructive: 0 100% 50%;
     --destructive-foreground: 210 40% 98%;
 
-    --ring: 215 20.2% 65.1%;
+    --ring: 158 80% 45%; /* match primary green */
 
     --radius: 0.5rem;
   }
 
   .dark {
-    --background: 224 71% 4%;
-    --foreground: 213 31% 91%;
+    --background: 222 47% 4%; /* deep navy */
+    --foreground: 210 20% 98%;
 
-    --muted: 223 47% 11%;
-    --muted-foreground: 215.4 16.3% 56.9%;
+    --muted: 218 22% 15%;
+    --muted-foreground: 210 20% 70%;
 
-    --accent: 216 34% 17%;
+    --accent: 221 39% 11%;
     --accent-foreground: 210 40% 98%;
 
-    --popover: 224 71% 4%;
+    --popover: 222 47% 4%;
     --popover-foreground: 215 20.2% 65.1%;
 
-    --border: 216 34% 17%;
-    --input: 216 34% 17%;
+    --border: 217 33% 14%;
+    --input: 217 33% 14%;
 
-    --card: 224 71% 4%;
-    --card-foreground: 213 31% 91%;
+    --card: 222 47% 4%;
+    --card-foreground: 210 20% 98%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 1.2%;
+    --primary: 158 80% 45%;
+    --primary-foreground: 210 20% 98%;
 
-    --secondary: 222.2 47.4% 11.2%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 215 20% 18%;
+    --secondary-foreground: 210 20% 98%;
 
-    --destructive: 0 63% 31%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 63% 45%;
+    --destructive-foreground: 210 20% 98%;
 
-    --ring: 216 34% 17%;
-
-    --radius: 0.5rem;
+    --ring: 158 80% 45%;
   }
 }
 
@@ -74,21 +72,29 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
     font-feature-settings:
       "rlig" 1,
       "calt" 1;
   }
+
+  span,
+  a,
+  strong,
+  em,
+  code {
+    color: hsl(var(--foreground));
+  }
+
   .background-gradient {
-    background-color: #fff;
+    background-color: #020817;
     background-image: radial-gradient(
-        at 21% 11%,
-        rgba(186, 186, 233, 0.53) 0,
+        at 30% 20%,
+        rgba(62, 229, 141, 0.15) 0,
         transparent 50%
       ),
-      radial-gradient(at 85% 0, hsla(46, 57%, 78%, 0.52) 0, transparent 50%),
-      radial-gradient(at 91% 36%, rgba(194, 213, 255, 0.68) 0, transparent 50%),
-      radial-gradient(at 8% 40%, rgba(251, 218, 239, 0.46) 0, transparent 50%);
+      radial-gradient(at 80% 10%, rgba(255, 255, 255, 0.08) 0, transparent 50%);
   }
 }

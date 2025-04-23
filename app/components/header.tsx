@@ -3,25 +3,55 @@ import Image from "next/image";
 export default function Header() {
   return (
     <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-      <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-        Get started by editing&nbsp;
-        <code className="font-mono font-bold">app/page.tsx</code>
-      </p>
-      <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-        <a
-          href="https://www.llamaindex.ai/"
-          className="flex items-center justify-center font-nunito text-lg font-bold gap-2"
-        >
-          <span>Built by LlamaIndex</span>
-          <Image
-            className="rounded-xl"
-            src="/llama.png"
-            alt="Llama Logo"
-            width={40}
-            height={40}
-            priority
-          />
-        </a>
+      <div className="gap-4 fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
+        <div className="relative group">
+          <a className="flex items-center justify-center gap-2">
+            <Image src="/naeyon.png" alt="Naeyon" className="rounded-xl" width={40} height={40} priority />
+          </a>
+          <span className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition">
+           Naeyon
+          </span>
+        </div>
+        <div className="relative group">
+          <a className="flex items-center justify-center gap-2">
+            <Image src="/togetherai.png" alt="Together AI" className="rounded-xl" width={40} height={40} priority />
+          </a>
+          <span className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition">
+            Together AI
+          </span>
+        </div>
+        <div className="relative group">
+          <a className="flex items-center justify-center gap-2">
+            <Image src="/llama.png" alt="LlamaIndex" className="rounded-xl" width={40} height={40} priority />
+          </a>
+          <span className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition">
+            LlamaIndex
+          </span>
+        </div>
+        <div className="relative group">
+          <a className="flex items-center justify-center gap-2">
+            <Image src="/nextjs.png" alt="NextJS" className="rounded-xl" width={40} height={40} priority />
+          </a>
+          <span className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition">
+            NextJS
+          </span>
+        </div>
+        <div className="relative group">
+          <a className="flex items-center justify-center gap-2">
+            <Image src="/ts.png" alt="Typescript" className="rounded-xl" width={40} height={40} priority />
+          </a>
+          <span className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition">
+          Typescript
+          </span>
+        </div>
+        <div className="relative group">
+          <a className="flex items-center justify-center gap-2">
+            <Image src="/vercel.png" alt="Typescript" width={40} height={40} priority />
+          </a>
+          <span className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition">
+          Vercel
+          </span>
+        </div>
       </div>
     </div>
   );
